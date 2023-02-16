@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.IframePageW3;
 import pages.TablePage;
 import utilities.Driver;
 import utilities.TestBase;
@@ -13,7 +14,7 @@ import java.time.Duration;
 
 public class Iframe extends TestBase {
 
-    TablePage tablePage = new TablePage();
+    IframePageW3 iframePageW3 = new IframePageW3();
 
     @Test
 
@@ -41,11 +42,11 @@ public class Iframe extends TestBase {
         cokkies1.click();
 
 
-        Driver.getDriver().switchTo().frame(tablePage.iframeId);
+        Driver.getDriver().switchTo().frame(iframePageW3.iframeId);
         WebElement cokkies2 = Driver.getDriver().findElement(By.id("accept-choices"));
         cokkies2.click();
 
-        tablePage.nextButton.click();
+        iframePageW3.nextButton.click();
 
     }
 }

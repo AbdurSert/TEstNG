@@ -25,16 +25,5 @@ public class TablePage {
 
     public WebElement fourthTable;
 
-    @FindBy (css = "iframe[title='W3Schools HTML Tutorial']")
-
-    public WebElement iframeId;
-
-    @FindBy (xpath = "//a[text()='Next ❯']")
-
-    public WebElement nextButton;
-
-
-
-
 
 }
