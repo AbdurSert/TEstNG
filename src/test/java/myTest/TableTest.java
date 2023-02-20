@@ -47,7 +47,6 @@ public class TableTest extends TestBase {
     public void tableTest3(){
 
         String actuallAmount =tablePage.fourthTable.getText();
-        System.out.println(actuallAmount);
         String expectedAmount = "$100.00";
 
         Assert.assertEquals(actuallAmount, expectedAmount);

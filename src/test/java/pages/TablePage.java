@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class TablePage {
 
     public TablePage(){PageFactory.initElements(Driver.getDriver(), this);}
@@ -17,13 +19,12 @@ public class TablePage {
 
     public WebElement secondTable;
 
-    @FindBy(xpath = "//table[2]//thead")
+    @FindBy(xpath = "//table[2]//thead//tr")
 
     public WebElement thirdTable;
 
     @FindBy (xpath = "//table[2]//tbody//tr[3]//td[4]")
 
     public WebElement fourthTable;
-
 
 }
